@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Joy Pizza Menu - Delicious pizzas made with fresh ingredients"
+    />
+    <meta name="theme-color" content="#ffffff" />
+
+    <title>Joy - Pizza Menu</title>
+
+    <!-- Preload critical assets -->
+    <link rel="preload" href="menu.css" as="style" />
+    <link rel="preload" href="components/navBar/navBar.css" as="style" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="components/navBar/navBar.css" />
+
+    <!-- Font Awesome - load async -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      media="print"
+      onload="this.media='all'"
+    />
+
+    <!-- Google Fonts - load efficiently -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@400;500;700&family=Lora:wght@400;700&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+
+    <!-- Fallback for Font Awesome -->
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      />
+    </noscript>
+  </head>
+
+  <body>
+    <main class="container">
+      <header>
+        <h1>Our Pizza Menu</h1>
+      </header>
+
+      <section class="menu-grid" aria-label="Pizza Menu">
+        <!-- Pizza Item 1 -->
+        <article class="menu-item">
+          <figure>
+            <img
+              src="assets/images/mozzarella_pizza_copy.jpg"
+              alt="Mozzarella and Cheese Pizza"
+              loading="lazy"
+              width="300"
+              height="200"
+            />
+          </figure>
+          <div class="menu-item-content">
+            <h2>Mozzarella and Cheese</h2>
+            <p>Classic pizza with fresh mozzarella and a blend of cheeses.</p>
+            <p class="price" aria-label="Price">$14</p>
+            <button
+              class="button add-to-cart"
+              aria-label="Add Mozzarella and Cheese Pizza to cart"
+            >
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              <span>Add to Cart</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Pizza Item 2 -->
+        <article class="menu-item">
+          <figure>
+            <img
+              src="assets/images/pepperoni_basil_pizza.jpg"
+              alt="Pepperoni and Basil Pizza"
+              loading="lazy"
+              width="300"
+              height="200"
+            />
+          </figure>
+          <div class="menu-item-content">
+            <h2>Pepperoni & Basil</h2>
+            <p>Delicious pepperoni with fresh basil on a tomato base.</p>
+            <p class="price" aria-label="Price">$16</p>
+            <button
+              class="button add-to-cart"
+              aria-label="Add Pepperoni and Basil Pizza to cart"
+            >
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              <span>Add to Cart</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Pizza Item 3 -->
+        <article class="menu-item">
+          <figure>
+            <img
+              src="assets/images/beer_pizza.jpg"
+              alt="Pizza and craft beer combo"
+              loading="lazy"
+              width="300"
+              height="200"
+            />
+          </figure>
+          <div class="menu-item-content">
+            <h2>Pizza w/ craft beer</h2>
+            <p>
+              A great deal for the big game. Any large pizza of choice with a
+              craft beer.
+            </p>
+            <p class="price" aria-label="Price">$18</p>
+            <button
+              class="button add-to-cart"
+              aria-label="Add Pizza and Craft Beer Combo to cart"
+            >
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              <span>Add to Cart</span>
+            </button>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <!-- Scripts -->
+    <script src="components/navBar/navBar.js" type="module" defer></script>
+  </body>
+</html>

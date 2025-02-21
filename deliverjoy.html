@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="components/navBar/navBar.css">
+  <link rel="stylesheet" href="components/cart/cart.css">
+  <style>
+    /* ... (your existing CSS styles) ... */
+
+    /* Delivery Links Styles */
+    #order {
+      background-color: #f9f9f9;
+      /* Soft background */
+      padding: 60px 0;
+      text-align: center;
+      /* Center the content */
+    }
+
+    .order-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .order-content h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .order-content p {
+      color: #777;
+      margin-bottom: 30px;
+    }
+
+    .delivery-links {
+      display: flex;
+      justify-content: center;
+      /* Center the logos */
+      gap: 30px;
+      /* Space between logos */
+      margin-top: 20px;
+      /* Add some space above the logos */
+    }
+
+    .delivery-links a {
+      display: block;
+      /* Make the entire logo clickable */
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .delivery-links a:hover {
+      transform: scale(1.05);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+      /* More defined shadow */
+    }
+
+    .delivery-links img {
+      width: 180px;
+      /* Adjust logo size */
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+      /* Subtle shadow */
+    }
+  </style>
+</head>
+
+<body>
+  <section id="order" class="section">
+    <div class="order-content">
+      <h2>Order Now</h2>
+      <p>Get Joy delivered right to your door!</p>
+      <div class="delivery-links">
+        <a href="/* Your Uber Eats Link */" target="_blank" rel="noopener noreferrer">
+          <img src="assets/images/uber_eats_logo.png" alt="Uber Eats" />
+        </a>
+        <a href="/* Your DoorDash Link */" target="_blank" rel="noopener noreferrer">
+          <img src="assets/images/doordash_logo.png" alt="DoorDash" />
+        </a>
+        <a href="/* Your Grubhub Link */" target="_blank" rel="noopener noreferrer">
+          <img src="assets/images/grubhub_logo.png" alt="Grubhub" />
+        </a>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
+<script src="components/navBar/navBar.js" type="module"></script>
