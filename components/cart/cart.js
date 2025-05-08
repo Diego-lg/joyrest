@@ -158,7 +158,6 @@ function createCart() {
         if (cartCount) {
             const totalQuantity = cart.reduce((total, item) => total + item.quantity, 0);
             cartCount.textContent = totalQuantity;
-            console.log('Total quantity:', totalQuantity);
 
             // Add a little animation to the cart count when updated
             cartCount.classList.add('cart-count-update');
